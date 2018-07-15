@@ -26,7 +26,7 @@ class LocationCommunicatorController extends Controller
 		$queryUrl = $this->getQueryUrl( '72.229.28.185' );
 		$locationParameters = $this->getApiResponseParameters( $queryUrl );
 		$country = $locationParameters["countryname"];
-        return view('welcome', [ 'country' => $country ] );
+        return view( 'welcome', [ 'country' => $country ] );
     }
 	
 	/**
